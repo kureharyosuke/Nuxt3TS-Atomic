@@ -9,7 +9,7 @@ type Props = {
   value: string;
   type: "button" | "reset" | "submit";
   disabled: boolean;
-  onClick: Function | undefined;
+  onClick: (payload: MouseEvent) => void | undefined;
 };
 defineProps<Props>();
 </script>
